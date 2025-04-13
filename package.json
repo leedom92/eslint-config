@@ -1,0 +1,50 @@
+{
+  "name": "@leedom92/eslint-config",
+  "type": "module",
+  "version": "0.1.0",
+  "description": "Flat Config of ESLint for fun.",
+  "keywords": [
+    "eslint-config",
+    "flat config"
+  ],
+  "author": "Leedom",
+  "license": "MIT",
+  "homepage": "https://github.com/leedom92/eslint-config#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/leedom92/eslint-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/leedom92/eslint-config/issues"
+  },
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "engines": {
+    "node": "^18.18.0 || ^20.9.0  || >=21.1.0"
+  },
+  "scripts": {
+    "lint": "eslint .",
+    "release": "bumpp && pnpm publish",
+    "prepare": "simple-git-hooks"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "npx lint-staged"
+  },
+  "lint-staged": {
+    "*": "eslint . --fix"
+  },
+  "peerDependencies": {
+    "eslint": ">=9"
+  },
+  "dependencies": {
+    "@leedomjs/eslint-config": "^0.12.3"
+  },
+  "devDependencies": {
+    "bumpp": "^10.1.0",
+    "eslint": "^9.24.0",
+    "lint-staged": "^15.5.1",
+    "simple-git-hooks": "^2.12.1"
+  }
+}
