@@ -1,7 +1,7 @@
 {
   "name": "@leedom92/eslint-config",
   "type": "module",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Flat Config of ESLint for fun.",
   "keywords": [
     "eslint-config",
