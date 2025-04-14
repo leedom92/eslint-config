@@ -1,7 +1,5 @@
 # @leedom92/eslint-config
 
-This repo is just for fun.
-
 [![npm](https://img.shields.io/npm/v/@leedom92/eslint-config?color=333&label=)](https://www.npmjs.com/package/@leedom92/eslint-config)
 
 
@@ -74,7 +72,7 @@ You can override the rules in your `eslint.config.js` file.
 import leedom from '@leedom92/eslint-config'
 
 export default leedom({
-  pure: false, // disabled default config
+  pure: true, // disabled default config
   extends: [...], // add your own legacy config
   /**
    * add your own rules
