@@ -18,7 +18,7 @@ export default function leedom(options = {
 
     // 兼容旧版 extends 语法
     ...compat.extends(
-      ...(!options.pure ? ['@leedomjs/eslint-config'] : []),
+      ...(!options.pure ? ['@leedomjs'] : []),
       ...(options.extends || []),
     ),
 
